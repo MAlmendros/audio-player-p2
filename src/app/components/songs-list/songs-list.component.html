@@ -1,0 +1,24 @@
+<div class="songs-list">
+    <div class="song-title mb-3">
+        <span>Lista de canciones</span>
+    </div>
+
+    <div *ngFor="let song of filteredSongs; let i = index" class="song-block row">
+        <div class="col-9">
+            <div class="song-label col-12 pb-1">
+                <span>{{ song.title }}</span>
+            </div>
+            <div class="song-text col-12">
+                <span>{{ song.author }}</span>
+            </div>
+        </div>
+
+        <div class="col-3 song-button">
+            <button (click)="showDetails(i)">
+                <i class="bi bi-music-note-list"></i>
+            </button>
+        </div>
+
+        <app-song-detail *ngIf="song.showDetails" [song]="song"></app-song-detail>
+    </div>
+</div>
