@@ -16,6 +16,7 @@ export class CommonService {
       label: 'The Free Songs',
       country: 'EEUU',
       duration: 121,
+      producer: 'Mario Vaquerizo',
       showDetails: false
     },
     {
@@ -28,6 +29,7 @@ export class CommonService {
       label: 'The Free Songs',
       country: 'Germany',
       duration: 144,
+      producer: 'Mario Vaquerizo',
       showDetails: false
     },
     {
@@ -40,6 +42,7 @@ export class CommonService {
       label: 'Elefant Music',
       country: 'EEUU',
       duration: 180,
+      producer: 'Luis del Olmo',
       showDetails: false
     },
     {
@@ -52,6 +55,7 @@ export class CommonService {
       label: 'Elefant Music',
       country: 'EEUU',
       duration: 164,
+      producer: 'Mario Vaquerizo',
       showDetails: false
     },
     {
@@ -64,6 +68,7 @@ export class CommonService {
       label: 'Elefant Music',
       country: 'England',
       duration: 122,
+      producer: 'Luis del Olmo',
       showDetails: false
     }
   ];

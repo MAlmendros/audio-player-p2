@@ -22,4 +22,8 @@ export class AppComponent {
   public playSong(song: Song): void {
     this.selectedSong = song;
   }
+
+  public stopSong(): void {
+    this.selectedSong = {} as Song;
+  }
 }

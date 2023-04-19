@@ -9,4 +9,5 @@ export interface Song {
     country: string;
     duration: number;
     showDetails: boolean;
+    producer: string;
 }

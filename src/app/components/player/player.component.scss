@@ -12,6 +12,7 @@ footer {
         margin-top: auto;
 
         img {
+            border: 8px solid #FFF;
             height: 150px;
             width: 150px;
         }
@@ -44,6 +45,18 @@ footer {
             color: #FFF;
             background-color: transparent;
             border: none;
+        }
+    }
+
+    .player-progress {
+
+        .player-progress-bar {
+            width: 81%;
+        }
+        
+        .player-progress-time {
+            font-weight: bold;
+            margin: 0 8px;
         }
     }
 }

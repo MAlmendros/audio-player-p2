@@ -1,4 +1,8 @@
 <footer class="player" *ngIf="showPlayer">
+    <audio *ngIf="false" controls>
+        <source [src]="audioUrl" type="audio/mpeg">
+    </audio>
+
     <div class="row py-4">
         <div class="player-image col-3">
             <img class="p-0" [src]="imageUrl">
@@ -29,9 +33,16 @@
         </div>
 
         <div class="player-progress col-12 mt-2">
-            <span id="seek-obj-container">
-                <progress id="seek-obj" value="0" max="100"></progress>
-            </span>
+            <span class="player-progress-time">{{ current }}</span>
+
+            <progress
+                class="player-progress-bar"
+                id="player-progress-seek"
+                max="{{ durationTime }}"
+                value="{{ currentTime }}">
+            </progress>
+            <span class="player-progress-time">{{ duration }}</span>
+
         </div>
     </div>
 </footer>
