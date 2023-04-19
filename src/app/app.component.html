@@ -1,7 +1,12 @@
 <div class="content" role="main">
-    <h1>{{ title }}</h1>
-
-    <div class="pt-4">
-      <app-songs-list [songsList]="songsList"></app-songs-list>
+    <div class="body">
+      <h1>{{ title }}</h1>
+  
+      <div class="pt-4">
+        <app-songs-list [songsList]="songsList" (play)="playSong($event)"></app-songs-list>
+      </div>
     </div>
+
+    <app-player [song]="selectedSong"></app-player>
 </div>
+

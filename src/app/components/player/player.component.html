@@ -1,0 +1,37 @@
+<footer class="player" *ngIf="showPlayer">
+    <div class="row py-4">
+        <div class="player-image col-3">
+            <img class="p-0" [src]="imageUrl">
+        </div>
+
+        <div class="player-buttons col-9">
+            <div class="row">
+                <div class="player-button-pause col-5">
+                    <button class="mx-1" (click)="pauseSong()">
+                        <i class="bi bi-pause-circle"></i>
+                    </button>
+                </div>
+
+                <div class="player-button-play col-2">
+                    <button class="player-buttons-play mx-1" (click)="playSong()">
+                        <i class="bi bi-play-circle"></i>
+                    </button>
+                </div>
+
+                <div class="player-button-stop col-5">
+                    <button class="mx-1" (click)="stopSong()">
+                        <i class="bi bi-stop-circle"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="player-progress col-12 mt-2">
+            <span id="seek-obj-container">
+                <progress id="seek-obj" value="0" max="100"></progress>
+            </span>
+        </div>
+    </div>
+</footer>

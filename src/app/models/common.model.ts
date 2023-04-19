@@ -4,8 +4,9 @@ export interface Song {
     author: string;
     year: number;
     album: string;
-    genre: string;
+    genre: string[];
     label: string;
     country: string;
+    duration: number;
     showDetails: boolean;
 }

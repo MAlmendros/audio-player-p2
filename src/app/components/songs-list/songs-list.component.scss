@@ -15,9 +15,14 @@
 
     .song-button {
         color: #000;
-        font-size: 24px;
+        font-size: 26px;
         margin: auto 0;
         text-align: right;
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
     }
 
     .song-label {

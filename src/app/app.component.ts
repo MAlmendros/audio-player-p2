@@ -11,10 +11,15 @@ export class AppComponent {
   public title: string = 'AUDIO PLAYER';
 
   public songsList: Song[] = [];
-
+  public selectedSong: Song = {} as Song;
+ 
   constructor(private service: CommonService) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.songsList = this.service.getSongsList();
+  }
+
+  public playSong(song: Song): void {
+    this.selectedSong = song;
   }
 }
