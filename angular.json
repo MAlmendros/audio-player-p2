@@ -77,7 +77,7 @@
             }
           },
           "options": {
-            "disableHostCheck": false
+            "disableHostCheck": true
           },
           "defaultConfiguration": "development"
         },
