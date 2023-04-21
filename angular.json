@@ -76,6 +76,9 @@
               "browserTarget": "audio-player:build:development"
             }
           },
+          "options": {
+            "disableHostCheck": false
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
